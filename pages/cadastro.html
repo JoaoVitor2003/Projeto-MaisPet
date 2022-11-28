@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body class="bodyLogin">
+    <main>
+        <div class="headerLogin">
+            <a href="../index.html"><img class="logo2" src="../assets/img/logo.png"></a>
+        </div>
+
+        <section id="login">
+            <div class="login">
+                <div class="texto_login">
+                    <h1>Cadastro</h1>
+                </div>
+                <form name="cadastro" action="../gravarBanco.jsp" method="post" class="cadastro">
+                    <input type="text" name="nome" placeholder="Nome completo" required>
+                    <input type="email" name="email" placeholder="Email" list="defaultEmails" required>
+                    <input type="tel" class="form-control" id="tel" name="telefone" placeholder="Telefone"
+                        maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
+                    <input type="date" name="dtNasc" placeholder="Data de Nascimento" required>
+                    <input oninput="mascara(this)" type="text" name="cpf" placeholder="CPF" required>
+                    <input required="" type="password" name="senha" id="senha" placeholder="Senha">
+                    <input required="" type="password" name="senhaC" id="senhaC" placeholder="Confirmar Senha">
+                    <div class="botao_entrar">
+                        <button type="submit">Criar</button>
+                        <datalist id="defaultEmails">
+                            <option value="jbond007@mi6.defence.gov.uk">
+                            <option value="jbourne@unknown.net">
+                            <option value="nfury@shield.org">
+                            <option value="tony@starkindustries.com">
+                            <option value="teste@grrrrrrrr.arg">
+                        </datalist>
+                    </div>
+                </form>
+                <div class="login_footer">
+                    <div class="forget_password2">
+                        <a href="#">Esqueci a senha.</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../assets/js/script.js"></script>
+
+</body>
+
+</html>

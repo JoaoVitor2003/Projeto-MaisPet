@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body class="bodyAgendamento">
+    <main>
+        <div class="headerAgendamento">
+            <a href="../index.html"><img class="logo2" src="../assets/img/logo.png"></a>
+        </div>
+
+        <section class="agendamento">
+            <script>
+            alert("Bem vindo !");
+            </script>
+            <div class="texto_agendamento">
+                <h1>Plano:</h1>
+            </div>
+            <div class="tipo_plano">
+                <h2>Básico</h2>
+            </div>
+
+            <form name="agendamento" action="../gravarAgendamento.jsp" method="post" class="formAgendamento">
+                <input type="text" name="nomePet" placeholder="Nome do seu Pet" required>
+                <input type="date" name="dtAgen" placeholder="Data do Agendamento" required>
+                <input type="time" name="hora" min="09:00" max="18:00" required>
+                <label for="tosa">Deseja tosar?</label>
+                <select name="tosa">
+                    <option value="">Selecione uma opção</option>
+                    <option value="Não">Não</option>
+                    <option value="Sim">Sim</option>
+                </select>
+                <button class="botaoAgendar" type="submit">Agendar !</button>
+            </form>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>

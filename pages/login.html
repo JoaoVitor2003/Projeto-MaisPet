@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body class="bodyLogin">
+    <main>
+        <div class="headerLogin">
+            <a href="../index.html"><img class="logo2" src="../assets/img/logo.png"></a>
+        </div>
+
+        <section id="login">
+            <div class="login">
+                <div class="texto_login">
+                    <h1>Entre aqui</h1>
+                </div>
+                <form method="post" action="../logar.jsp">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <br>
+                    <input type="password" name="password" placeholder="Senha" required>
+                    <div class="botao_entrar">
+                        <button type="submit">Entrar</button>
+                    </div>
+                </form>
+                <div class="login_footer">
+                    <div class="forget_password">
+                        <a href="#">Esqueci a senha.</a>
+                    </div>
+                    <div class="sign_up">
+                        <p>Novo por aqui?<a href="cadastro.html">Criar conta.</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
